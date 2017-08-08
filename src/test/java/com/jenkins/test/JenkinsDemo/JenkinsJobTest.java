@@ -19,7 +19,7 @@ public class JenkinsJobTest {
 
 	@BeforeClass
 	public void initDriver() {
-		System.setProperty("webdriver.gecko.driver","D:\\driver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","D:\\driver\\geckodriver-v0.17.exe");
 		driver = new FirefoxDriver();
 	}
 
