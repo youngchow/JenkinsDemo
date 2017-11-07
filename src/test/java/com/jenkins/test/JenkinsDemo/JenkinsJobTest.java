@@ -1,7 +1,7 @@
 package com.jenkins.test.JenkinsDemo;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -19,8 +19,8 @@ public class JenkinsJobTest {
 
 	@BeforeClass
 	public void initDriver() {
-		System.setProperty("webdriver.gecko.driver","D:\\driver\\geckodriver-v0.17.exe");
-		driver = new FirefoxDriver();
+		//System.setProperty("webdriver.chrome.driver","E:\\environment\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
 	}
 
 	@BeforeMethod
