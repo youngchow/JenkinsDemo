@@ -19,7 +19,7 @@ public class JenkinsJobTest {
 
 	@BeforeClass
 	public void initDriver() {
-		System.setProperty("webdriver.chrome.driver","driver/chromedriver");
+		//System.setProperty("webdriver.chrome.driver","driver/chromedriver");
 		driver = new ChromeDriver();
 	}
 
