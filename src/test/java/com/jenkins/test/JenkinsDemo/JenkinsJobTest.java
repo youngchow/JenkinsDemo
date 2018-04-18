@@ -11,7 +11,7 @@ public class JenkinsJobTest {
 
 	private WebDriver driver;
 	
-	@Test(testName = "001", description = "BaiduMapTest")
+	@Test(testName = "001", description = "Test")
 	public void test1() throws Exception {
 		System.out.println("Welcome to Jenkins World");
 		System.out.println(driver.getTitle());
@@ -19,13 +19,13 @@ public class JenkinsJobTest {
 
 	@BeforeClass
 	public void initDriver() {
-		//System.setProperty("webdriver.chrome.driver","E:\\environment\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","driver/chromedriver");
 		driver = new ChromeDriver();
 	}
 
 	@BeforeMethod
 	public void initWebpage() throws Exception {
-		driver.get("http://www.facebook.com");
+		driver.get("http://i2m.jusdascm.com/ideas/mainFrame.html");
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 	}
